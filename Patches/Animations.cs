@@ -84,8 +84,8 @@ public class PlantObjectPatch
 [HarmonyPatch(typeof(Spike))]
 public class SpikePatch
 {
-    const float RecoverDurationScale = 0.5f;
-    const float CastDurationScale = 0.5f;
+    const float RecoverDurationScale = 0.4f;
+    const float CastDurationScale = 0.6f;
 
     // If there's no ground, CastSpike exits early and never starts recover
     [HarmonyPatch("CastSpike")]
