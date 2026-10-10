@@ -27,7 +27,7 @@ public class BeamPatch
     static readonly Fix SlowAimSpeed = (Fix)0.005;
     // Seconds the fast aim speed lasts, counted from when the beam can first turn
     // (grounded beams snap to the aim direction during their first frame, so the window starts after it)
-    static readonly Fix FastAimDuration = (Fix)0.5;
+    static readonly Fix FastAimDuration = (Fix)0.25;
 
     [HarmonyPatch("Awake")]
     [HarmonyPostfix]
